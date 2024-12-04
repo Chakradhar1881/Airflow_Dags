@@ -1,0 +1,23 @@
+[2024-11-29 11:16:47,342] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: kpi_calculation_pipeline.calculate_kpi 2024-11-22T15:05:00+00:00 [queued]>
+[2024-11-29 11:16:47,412] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: kpi_calculation_pipeline.calculate_kpi 2024-11-22T15:05:00+00:00 [queued]>
+[2024-11-29 11:16:47,413] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-29 11:16:47,413] {taskinstance.py:1088} INFO - Starting attempt 1 of 2
+[2024-11-29 11:16:47,414] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-29 11:16:47,543] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): calculate_kpi> on 2024-11-22T15:05:00+00:00
+[2024-11-29 11:16:47,555] {standard_task_runner.py:52} INFO - Started process 124 to run task
+[2024-11-29 11:16:47,559] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'kpi_calculation_pipeline', 'calculate_kpi', '2024-11-22T15:05:00+00:00', '--job-id', '369', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_injestion_dag/bazefield_kpi_calculation.py', '--cfg-path', '/tmp/tmp60kig977', '--error-file', '/tmp/tmp1xrd_kne']
+[2024-11-29 11:16:47,561] {standard_task_runner.py:77} INFO - Job 369: Subtask calculate_kpi
+[2024-11-29 11:16:47,771] {logging_mixin.py:104} INFO - Running <TaskInstance: kpi_calculation_pipeline.calculate_kpi 2024-11-22T15:05:00+00:00 [running]> on host 3f28a2ef9091
+[2024-11-29 11:16:48,196] {taskinstance.py:1300} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=kpi_calculation_pipeline
+AIRFLOW_CTX_TASK_ID=calculate_kpi
+AIRFLOW_CTX_EXECUTION_DATE=2024-11-22T15:05:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-11-22T15:05:00+00:00
+[2024-11-29 11:16:48,266] {logging_mixin.py:104} INFO - maniyachi site generation for this hour : 2986.8371260523
+[2024-11-29 11:16:48,355] {python.py:151} INFO - Done. Returned value was: None
+[2024-11-29 11:16:48,395] {taskinstance.py:1204} INFO - Marking task as SUCCESS. dag_id=kpi_calculation_pipeline, task_id=calculate_kpi, execution_date=20241122T150500, start_date=20241129T111647, end_date=20241129T111648
+[2024-11-29 11:16:48,625] {taskinstance.py:1265} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-29 11:16:48,639] {local_task_job.py:151} INFO - Task exited with return code 0

@@ -1,0 +1,24 @@
+[2024-11-22 08:05:11,630] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: kpi_calculation_pipeline.store_kpi 2024-11-22T07:05:00+00:00 [queued]>
+[2024-11-22 08:05:11,672] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: kpi_calculation_pipeline.store_kpi 2024-11-22T07:05:00+00:00 [queued]>
+[2024-11-22 08:05:11,673] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-22 08:05:11,673] {taskinstance.py:1088} INFO - Starting attempt 1 of 2
+[2024-11-22 08:05:11,674] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-22 08:05:11,729] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): store_kpi> on 2024-11-22T07:05:00+00:00
+[2024-11-22 08:05:11,733] {standard_task_runner.py:52} INFO - Started process 7104 to run task
+[2024-11-22 08:05:11,736] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'kpi_calculation_pipeline', 'store_kpi', '2024-11-22T07:05:00+00:00', '--job-id', '344', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_injestion_dag/bazefield_kpi_calculation.py', '--cfg-path', '/tmp/tmp7_l249bv', '--error-file', '/tmp/tmp6p8jiaos']
+[2024-11-22 08:05:11,738] {standard_task_runner.py:77} INFO - Job 344: Subtask store_kpi
+[2024-11-22 08:05:11,847] {logging_mixin.py:104} INFO - Running <TaskInstance: kpi_calculation_pipeline.store_kpi 2024-11-22T07:05:00+00:00 [running]> on host 1b505405454d
+[2024-11-22 08:05:12,032] {taskinstance.py:1300} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=kpi_calculation_pipeline
+AIRFLOW_CTX_TASK_ID=store_kpi
+AIRFLOW_CTX_EXECUTION_DATE=2024-11-22T07:05:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-11-22T07:05:00+00:00
+[2024-11-22 08:05:12,077] {base.py:69} INFO - Using connection to: id: postgres_default. Host: 10.197.48.9, Port: 5432, Schema: kpi_data, Login: rakshit, Password: ***, extra: {}
+[2024-11-22 08:05:12,261] {logging_mixin.py:104} INFO - successfully connected
+[2024-11-22 08:05:12,358] {python.py:151} INFO - Done. Returned value was: None
+[2024-11-22 08:05:12,387] {taskinstance.py:1204} INFO - Marking task as SUCCESS. dag_id=kpi_calculation_pipeline, task_id=store_kpi, execution_date=20241122T070500, start_date=20241122T080511, end_date=20241122T080512
+[2024-11-22 08:05:12,482] {taskinstance.py:1265} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-22 08:05:12,529] {local_task_job.py:151} INFO - Task exited with return code 0

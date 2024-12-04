@@ -1,0 +1,29 @@
+[2024-12-03 05:48:03,654] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: KPIs_for_1_Minutes.Hello_world 2024-12-03T05:47:00+00:00 [queued]>
+[2024-12-03 05:48:03,696] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: KPIs_for_1_Minutes.Hello_world 2024-12-03T05:47:00+00:00 [queued]>
+[2024-12-03 05:48:03,697] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-03 05:48:03,698] {taskinstance.py:1088} INFO - Starting attempt 1 of 3
+[2024-12-03 05:48:03,699] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-03 05:48:03,756] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): Hello_world> on 2024-12-03T05:47:00+00:00
+[2024-12-03 05:48:03,761] {standard_task_runner.py:52} INFO - Started process 1666 to run task
+[2024-12-03 05:48:03,766] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'KPIs_for_1_Minutes', 'Hello_world', '2024-12-03T05:47:00+00:00', '--job-id', '430', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Kpi_dags/main.py', '--cfg-path', '/tmp/tmpkqezdko9', '--error-file', '/tmp/tmpgroeepdy']
+[2024-12-03 05:48:03,767] {standard_task_runner.py:77} INFO - Job 430: Subtask Hello_world
+[2024-12-03 05:48:03,907] {logging_mixin.py:104} INFO - Running <TaskInstance: KPIs_for_1_Minutes.Hello_world 2024-12-03T05:47:00+00:00 [running]> on host 4dee9495e4cc
+[2024-12-03 05:48:04,128] {taskinstance.py:1300} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Rule Manager
+AIRFLOW_CTX_DAG_ID=KPIs_for_1_Minutes
+AIRFLOW_CTX_TASK_ID=Hello_world
+AIRFLOW_CTX_EXECUTION_DATE=2024-12-03T05:47:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-12-03T05:47:00+00:00
+[2024-12-03 05:48:04,130] {main.py:51} INFO - Hello World
+[2024-12-03 05:48:04,131] {main.py:52} INFO - time taken to connect to kpi_main_table db : 0:00:00.271675
+[2024-12-03 05:48:04,132] {main.py:53} INFO -    id    kpi_name  ... last_failure_time version_id
+0   2  Wind Speed  ...              None          1
+1   3              ...              None          1
+
+[2 rows x 28 columns]
+[2024-12-03 05:48:04,173] {python.py:151} INFO - Done. Returned value was: None
+[2024-12-03 05:48:04,194] {taskinstance.py:1204} INFO - Marking task as SUCCESS. dag_id=KPIs_for_1_Minutes, task_id=Hello_world, execution_date=20241203T054700, start_date=20241203T054803, end_date=20241203T054804
+[2024-12-03 05:48:04,321] {taskinstance.py:1265} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-03 05:48:04,356] {local_task_job.py:151} INFO - Task exited with return code 0

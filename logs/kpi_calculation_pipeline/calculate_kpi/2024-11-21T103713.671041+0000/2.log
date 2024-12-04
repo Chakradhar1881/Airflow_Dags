@@ -1,0 +1,35 @@
+[2024-11-21 10:43:50,449] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: kpi_calculation_pipeline.calculate_kpi 2024-11-21T10:37:13.671041+00:00 [queued]>
+[2024-11-21 10:43:50,754] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: kpi_calculation_pipeline.calculate_kpi 2024-11-21T10:37:13.671041+00:00 [queued]>
+[2024-11-21 10:43:50,755] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-21 10:43:50,756] {taskinstance.py:1088} INFO - Starting attempt 2 of 2
+[2024-11-21 10:43:50,757] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2024-11-21 10:43:51,429] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): calculate_kpi> on 2024-11-21T10:37:13.671041+00:00
+[2024-11-21 10:43:51,433] {standard_task_runner.py:52} INFO - Started process 56 to run task
+[2024-11-21 10:43:51,438] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'kpi_calculation_pipeline', 'calculate_kpi', '2024-11-21T10:37:13.671041+00:00', '--job-id', '48', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_injestion_dag/bazefield_kpi_calculation.py', '--cfg-path', '/tmp/tmpapj9s9m5', '--error-file', '/tmp/tmpzaz4_9ls']
+[2024-11-21 10:43:51,454] {standard_task_runner.py:77} INFO - Job 48: Subtask calculate_kpi
+[2024-11-21 10:43:52,831] {logging_mixin.py:104} INFO - Running <TaskInstance: kpi_calculation_pipeline.calculate_kpi 2024-11-21T10:37:13.671041+00:00 [running]> on host 1b505405454d
+[2024-11-21 10:43:54,989] {taskinstance.py:1300} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=kpi_calculation_pipeline
+AIRFLOW_CTX_TASK_ID=calculate_kpi
+AIRFLOW_CTX_EXECUTION_DATE=2024-11-21T10:37:13.671041+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-11-21T10:37:13.671041+00:00
+[2024-11-21 10:43:55,151] {taskinstance.py:1501} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1157, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1331, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1361, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_injestion_dag/bazefield_kpi_calculation.py", line 169, in calculate_kpi
+    raise ValueError("No data received from API")
+ValueError: No data received from API
+[2024-11-21 10:43:55,180] {taskinstance.py:1544} INFO - Marking task as FAILED. dag_id=kpi_calculation_pipeline, task_id=calculate_kpi, execution_date=20241121T103713, start_date=20241121T104350, end_date=20241121T104355
+[2024-11-21 10:43:56,466] {local_task_job.py:151} INFO - Task exited with return code 1

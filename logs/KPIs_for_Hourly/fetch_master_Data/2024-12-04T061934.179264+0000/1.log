@@ -1,0 +1,31 @@
+[2024-12-04 06:21:31,763] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: KPIs_for_Hourly.fetch_master_Data 2024-12-04T06:19:34.179264+00:00 [queued]>
+[2024-12-04 06:21:31,893] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: KPIs_for_Hourly.fetch_master_Data 2024-12-04T06:19:34.179264+00:00 [queued]>
+[2024-12-04 06:21:31,894] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-04 06:21:31,895] {taskinstance.py:1088} INFO - Starting attempt 1 of 3
+[2024-12-04 06:21:31,896] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-04 06:21:32,161] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): fetch_master_Data> on 2024-12-04T06:19:34.179264+00:00
+[2024-12-04 06:21:32,169] {standard_task_runner.py:52} INFO - Started process 76 to run task
+[2024-12-04 06:21:32,173] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'KPIs_for_Hourly', 'fetch_master_Data', '2024-12-04T06:19:34.179264+00:00', '--job-id', '490', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Kpi_dags/main.py', '--cfg-path', '/tmp/tmp_8iwg1eb', '--error-file', '/tmp/tmpmz6t05ju']
+[2024-12-04 06:21:32,175] {standard_task_runner.py:77} INFO - Job 490: Subtask fetch_master_Data
+[2024-12-04 06:21:32,737] {logging_mixin.py:104} INFO - Running <TaskInstance: KPIs_for_Hourly.fetch_master_Data 2024-12-04T06:19:34.179264+00:00 [running]> on host 22a8df8403b9
+[2024-12-04 06:21:33,531] {taskinstance.py:1300} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Rule Manager
+AIRFLOW_CTX_DAG_ID=KPIs_for_Hourly
+AIRFLOW_CTX_TASK_ID=fetch_master_Data
+AIRFLOW_CTX_EXECUTION_DATE=2024-12-04T06:19:34.179264+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-12-04T06:19:34.179264+00:00
+[2024-12-04 06:21:33,533] {main.py:102} INFO - Fetching data from master db and storing excel between 2024-12-04 10:00:00+05:30 and 2024-12-04 11:00:00+05:30
+[2024-12-04 06:21:33,535] {main.py:27} INFO - Connecting to database...
+[2024-12-04 06:21:33,590] {base.py:69} INFO - Using connection to: id: master_table_conn. Host: 10.10.18.92, Port: 5432, Schema: landing_zone, Login: Chakradhar, Password: ***, extra: {}
+[2024-12-04 06:21:33,860] {main.py:30} INFO - Connected successfully...
+[2024-12-04 06:21:33,961] {main.py:110} INFO - data fetched successfully from master db and size is (0, 8)
+[2024-12-04 06:21:33,963] {main.py:111} INFO - Empty DataFrame
+Columns: [ts, tag_obj_id, asset_id, value, created_by, updated_by, create_time, updated_time]
+Index: []
+[2024-12-04 06:21:33,983] {main.py:113} INFO - data stored successfully
+[2024-12-04 06:21:33,986] {python.py:151} INFO - Done. Returned value was: None
+[2024-12-04 06:21:34,074] {taskinstance.py:1204} INFO - Marking task as SUCCESS. dag_id=KPIs_for_Hourly, task_id=fetch_master_Data, execution_date=20241204T061934, start_date=20241204T062131, end_date=20241204T062134
+[2024-12-04 06:21:34,329] {taskinstance.py:1265} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-04 06:21:34,361] {local_task_job.py:151} INFO - Task exited with return code 0

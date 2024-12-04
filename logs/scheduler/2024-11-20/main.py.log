@@ -1,0 +1,112 @@
+[2024-11-20 05:33:49,330] {scheduler_job.py:182} INFO - Started process (PID=21) to work on /opt/airflow/dags/main.py
+[2024-11-20 05:33:49,331] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-11-20 05:33:49,332] {logging_mixin.py:104} INFO - [2024-11-20 05:33:49,332] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-11-20 05:33:50,609] {logging_mixin.py:104} INFO - [2024-11-20 05:33:50,604] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 75, in <module>
+    task_2 = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 174, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['python_callable'] is required
+[2024-11-20 05:33:50,613] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2024-11-20 05:33:50,656] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/main.py took 1.327 seconds
+[2024-11-20 05:34:22,145] {scheduler_job.py:182} INFO - Started process (PID=29) to work on /opt/airflow/dags/main.py
+[2024-11-20 05:34:22,147] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-11-20 05:34:22,149] {logging_mixin.py:104} INFO - [2024-11-20 05:34:22,148] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-11-20 05:34:23,039] {logging_mixin.py:104} INFO - [2024-11-20 05:34:23,032] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 75, in <module>
+    task_2 = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 174, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['python_callable'] is required
+[2024-11-20 05:34:23,050] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2024-11-20 05:34:23,160] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/main.py took 1.018 seconds
+[2024-11-20 05:34:53,370] {scheduler_job.py:182} INFO - Started process (PID=37) to work on /opt/airflow/dags/main.py
+[2024-11-20 05:34:53,372] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-11-20 05:34:53,374] {logging_mixin.py:104} INFO - [2024-11-20 05:34:53,374] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-11-20 05:34:53,952] {logging_mixin.py:104} INFO - [2024-11-20 05:34:53,947] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 75, in <module>
+    task_2 = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 174, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['python_callable'] is required
+[2024-11-20 05:34:53,958] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2024-11-20 05:34:54,016] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/main.py took 0.648 seconds
+[2024-11-20 05:35:24,498] {scheduler_job.py:182} INFO - Started process (PID=45) to work on /opt/airflow/dags/main.py
+[2024-11-20 05:35:24,500] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-11-20 05:35:24,502] {logging_mixin.py:104} INFO - [2024-11-20 05:35:24,502] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-11-20 05:35:24,932] {logging_mixin.py:104} INFO - [2024-11-20 05:35:24,925] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 75, in <module>
+    task_2 = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 174, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['python_callable'] is required
+[2024-11-20 05:35:24,937] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2024-11-20 05:35:24,986] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/main.py took 0.490 seconds
+[2024-11-20 05:35:55,662] {scheduler_job.py:182} INFO - Started process (PID=53) to work on /opt/airflow/dags/main.py
+[2024-11-20 05:35:55,665] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-11-20 05:35:55,666] {logging_mixin.py:104} INFO - [2024-11-20 05:35:55,666] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-11-20 05:35:56,036] {logging_mixin.py:104} INFO - [2024-11-20 05:35:56,032] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 75, in <module>
+    task_2 = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 174, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['python_callable'] is required
+[2024-11-20 05:35:56,041] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2024-11-20 05:35:56,083] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/main.py took 0.423 seconds
+[2024-11-20 05:36:26,773] {scheduler_job.py:182} INFO - Started process (PID=61) to work on /opt/airflow/dags/main.py
+[2024-11-20 05:36:26,775] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-11-20 05:36:26,777] {logging_mixin.py:104} INFO - [2024-11-20 05:36:26,777] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-11-20 05:36:27,148] {logging_mixin.py:104} INFO - [2024-11-20 05:36:27,143] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 75, in <module>
+    task_2 = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 174, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['python_callable'] is required
+[2024-11-20 05:36:27,153] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2024-11-20 05:36:27,193] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/main.py took 0.424 seconds
+[2024-11-20 05:36:57,854] {scheduler_job.py:182} INFO - Started process (PID=69) to work on /opt/airflow/dags/main.py
+[2024-11-20 05:36:57,856] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2024-11-20 05:36:57,858] {logging_mixin.py:104} INFO - [2024-11-20 05:36:57,857] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2024-11-20 05:36:58,176] {logging_mixin.py:104} INFO - [2024-11-20 05:36:58,169] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 75, in <module>
+    task_2 = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 174, in apply_defaults
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Argument ['python_callable'] is required
+[2024-11-20 05:36:58,180] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2024-11-20 05:36:58,224] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/main.py took 0.373 seconds

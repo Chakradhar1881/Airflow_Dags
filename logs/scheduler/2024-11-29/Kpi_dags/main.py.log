@@ -1,0 +1,15 @@
+[2024-11-29 11:15:45,057] {scheduler_job.py:182} INFO - Started process (PID=21) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-11-29 11:15:45,059] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-11-29 11:15:45,060] {logging_mixin.py:104} INFO - [2024-11-29 11:15:45,060] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-11-29 11:15:46,285] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-11-29 11:15:46,307] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 1.253 seconds
+[2024-11-29 11:16:37,958] {scheduler_job.py:182} INFO - Started process (PID=97) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-11-29 11:16:37,962] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-11-29 11:16:37,967] {logging_mixin.py:104} INFO - [2024-11-29 11:16:37,967] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-11-29 11:16:39,113] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-11-29 11:16:39,149] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 1.205 seconds
+[2024-11-29 11:17:19,451] {scheduler_job.py:182} INFO - Started process (PID=203) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-11-29 11:17:19,452] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-11-29 11:17:19,454] {logging_mixin.py:104} INFO - [2024-11-29 11:17:19,453] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-11-29 11:17:19,994] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-11-29 11:17:20,025] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 0.576 seconds

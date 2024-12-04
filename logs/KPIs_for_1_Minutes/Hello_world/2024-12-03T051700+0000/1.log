@@ -1,0 +1,23 @@
+[2024-12-03 05:18:06,052] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: KPIs_for_1_Minutes.Hello_world 2024-12-03T05:17:00+00:00 [queued]>
+[2024-12-03 05:18:06,100] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: KPIs_for_1_Minutes.Hello_world 2024-12-03T05:17:00+00:00 [queued]>
+[2024-12-03 05:18:06,101] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-03 05:18:06,102] {taskinstance.py:1088} INFO - Starting attempt 1 of 3
+[2024-12-03 05:18:06,103] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-03 05:18:06,225] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): Hello_world> on 2024-12-03T05:17:00+00:00
+[2024-12-03 05:18:06,232] {standard_task_runner.py:52} INFO - Started process 620 to run task
+[2024-12-03 05:18:06,238] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'KPIs_for_1_Minutes', 'Hello_world', '2024-12-03T05:17:00+00:00', '--job-id', '419', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/Kpi_dags/main.py', '--cfg-path', '/tmp/tmpjslm3tc8', '--error-file', '/tmp/tmpryzdaas9']
+[2024-12-03 05:18:06,241] {standard_task_runner.py:77} INFO - Job 419: Subtask Hello_world
+[2024-12-03 05:18:06,532] {logging_mixin.py:104} INFO - Running <TaskInstance: KPIs_for_1_Minutes.Hello_world 2024-12-03T05:17:00+00:00 [running]> on host 4dee9495e4cc
+[2024-12-03 05:18:07,028] {taskinstance.py:1300} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Rule Manager
+AIRFLOW_CTX_DAG_ID=KPIs_for_1_Minutes
+AIRFLOW_CTX_TASK_ID=Hello_world
+AIRFLOW_CTX_EXECUTION_DATE=2024-12-03T05:17:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-12-03T05:17:00+00:00
+[2024-12-03 05:18:07,030] {main.py:51} INFO - Hello World
+[2024-12-03 05:18:07,031] {python.py:151} INFO - Done. Returned value was: None
+[2024-12-03 05:18:07,064] {taskinstance.py:1204} INFO - Marking task as SUCCESS. dag_id=KPIs_for_1_Minutes, task_id=Hello_world, execution_date=20241203T051700, start_date=20241203T051806, end_date=20241203T051807
+[2024-12-03 05:18:07,218] {taskinstance.py:1265} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-03 05:18:07,239] {local_task_job.py:151} INFO - Task exited with return code 0
