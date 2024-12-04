@@ -6954,3 +6954,172 @@ psycopg2.OperationalError: could not connect to server: Connection refused
 [2024-12-04 09:46:14,909] {logging_mixin.py:104} INFO - [2024-12-04 09:46:14,908] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:40:00+00:00
 [2024-12-04 09:46:14,937] {logging_mixin.py:104} INFO - [2024-12-04 09:46:14,936] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
 [2024-12-04 09:46:15,257] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 2.374 seconds
+[2024-12-04 09:47:23,809] {scheduler_job.py:182} INFO - Started process (PID=6250) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:47:23,830] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-12-04 09:47:23,860] {logging_mixin.py:104} INFO - [2024-12-04 09:47:23,859] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:47:37,941] {logging_mixin.py:104} INFO - [2024-12-04 09:47:37,940] {main.py:175} INFO - connecting to kpi_main table
+[2024-12-04 09:47:37,967] {logging_mixin.py:104} INFO - [2024-12-04 09:47:37,966] {main.py:27} INFO - Connecting to database...
+[2024-12-04 09:47:39,374] {logging_mixin.py:104} INFO - [2024-12-04 09:47:39,372] {base.py:69} INFO - Using connection to: id: kpi_table_connection. Host: 10.197.48.9, Port: 5432, Schema: rule_manager, Login: rakshit, Password: 3098333, extra: {}
+[2024-12-04 09:47:40,302] {logging_mixin.py:104} INFO - [2024-12-04 09:47:40,301] {main.py:30} INFO - Connected successfully...
+[2024-12-04 09:47:40,895] {logging_mixin.py:104} INFO - [2024-12-04 09:47:40,895] {main.py:178} INFO - connection established and data fetched successfully in 0:00:02.954415 seconds
+[2024-12-04 09:47:41,314] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['KPIs_for_Hourly', 'KPIs_for_5_Minutes']) retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:47:44,371] {logging_mixin.py:104} INFO - [2024-12-04 09:47:44,369] {dag.py:1833} INFO - Sync 2 DAGs
+[2024-12-04 09:47:45,236] {logging_mixin.py:104} INFO - [2024-12-04 09:47:45,235] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:40:00+00:00
+[2024-12-04 09:47:45,319] {logging_mixin.py:104} INFO - [2024-12-04 09:47:45,318] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
+[2024-12-04 09:47:46,645] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 22.889 seconds
+[2024-12-04 09:48:20,583] {scheduler_job.py:182} INFO - Started process (PID=6266) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:48:20,606] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-12-04 09:48:20,619] {logging_mixin.py:104} INFO - [2024-12-04 09:48:20,618] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:48:25,459] {logging_mixin.py:104} INFO - [2024-12-04 09:48:25,458] {main.py:175} INFO - connecting to kpi_main table
+[2024-12-04 09:48:25,460] {logging_mixin.py:104} INFO - [2024-12-04 09:48:25,460] {main.py:27} INFO - Connecting to database...
+[2024-12-04 09:48:25,520] {logging_mixin.py:104} INFO - [2024-12-04 09:48:25,520] {base.py:69} INFO - Using connection to: id: kpi_table_connection. Host: 10.197.48.9, Port: 5432, Schema: rule_manager, Login: rakshit, Password: 3098333, extra: {}
+[2024-12-04 09:48:25,719] {logging_mixin.py:104} INFO - [2024-12-04 09:48:25,718] {main.py:30} INFO - Connected successfully...
+[2024-12-04 09:48:25,803] {logging_mixin.py:104} INFO - [2024-12-04 09:48:25,803] {main.py:178} INFO - connection established and data fetched successfully in 0:00:00.344725 seconds
+[2024-12-04 09:48:25,831] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['KPIs_for_Hourly', 'KPIs_for_5_Minutes']) retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:48:25,915] {logging_mixin.py:104} INFO - [2024-12-04 09:48:25,914] {dag.py:1833} INFO - Sync 2 DAGs
+[2024-12-04 09:48:25,985] {logging_mixin.py:104} INFO - [2024-12-04 09:48:25,985] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:40:00+00:00
+[2024-12-04 09:48:25,992] {logging_mixin.py:104} INFO - [2024-12-04 09:48:25,992] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
+[2024-12-04 09:48:26,099] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 5.567 seconds
+[2024-12-04 09:48:56,621] {scheduler_job.py:182} INFO - Started process (PID=6282) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:48:56,624] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-12-04 09:48:56,625] {logging_mixin.py:104} INFO - [2024-12-04 09:48:56,625] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:48:57,056] {logging_mixin.py:104} INFO - [2024-12-04 09:48:57,056] {main.py:175} INFO - connecting to kpi_main table
+[2024-12-04 09:48:57,057] {logging_mixin.py:104} INFO - [2024-12-04 09:48:57,057] {main.py:27} INFO - Connecting to database...
+[2024-12-04 09:48:57,075] {logging_mixin.py:104} INFO - [2024-12-04 09:48:57,075] {base.py:69} INFO - Using connection to: id: kpi_table_connection. Host: 10.197.48.9, Port: 5432, Schema: rule_manager, Login: rakshit, Password: 3098333, extra: {}
+[2024-12-04 09:48:57,792] {logging_mixin.py:104} INFO - [2024-12-04 09:48:57,792] {main.py:30} INFO - Connected successfully...
+[2024-12-04 09:48:57,853] {logging_mixin.py:104} INFO - [2024-12-04 09:48:57,853] {main.py:178} INFO - connection established and data fetched successfully in 0:00:00.796472 seconds
+[2024-12-04 09:48:57,865] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['KPIs_for_Hourly', 'KPIs_for_5_Minutes']) retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:48:57,897] {logging_mixin.py:104} INFO - [2024-12-04 09:48:57,897] {dag.py:1833} INFO - Sync 2 DAGs
+[2024-12-04 09:48:57,920] {logging_mixin.py:104} INFO - [2024-12-04 09:48:57,920] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:40:00+00:00
+[2024-12-04 09:48:57,922] {logging_mixin.py:104} INFO - [2024-12-04 09:48:57,922] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
+[2024-12-04 09:48:57,968] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 1.350 seconds
+[2024-12-04 09:49:28,331] {scheduler_job.py:182} INFO - Started process (PID=6298) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:49:28,333] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-12-04 09:49:28,335] {logging_mixin.py:104} INFO - [2024-12-04 09:49:28,335] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:49:28,813] {logging_mixin.py:104} INFO - [2024-12-04 09:49:28,813] {main.py:175} INFO - connecting to kpi_main table
+[2024-12-04 09:49:28,814] {logging_mixin.py:104} INFO - [2024-12-04 09:49:28,814] {main.py:27} INFO - Connecting to database...
+[2024-12-04 09:49:28,835] {logging_mixin.py:104} INFO - [2024-12-04 09:49:28,835] {base.py:69} INFO - Using connection to: id: kpi_table_connection. Host: 10.197.48.9, Port: 5432, Schema: rule_manager, Login: rakshit, Password: 3098333, extra: {}
+[2024-12-04 09:49:29,015] {logging_mixin.py:104} INFO - [2024-12-04 09:49:29,015] {main.py:30} INFO - Connected successfully...
+[2024-12-04 09:49:29,078] {logging_mixin.py:104} INFO - [2024-12-04 09:49:29,078] {main.py:178} INFO - connection established and data fetched successfully in 0:00:00.265215 seconds
+[2024-12-04 09:49:29,091] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['KPIs_for_Hourly', 'KPIs_for_5_Minutes']) retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:49:29,131] {logging_mixin.py:104} INFO - [2024-12-04 09:49:29,131] {dag.py:1833} INFO - Sync 2 DAGs
+[2024-12-04 09:49:29,160] {logging_mixin.py:104} INFO - [2024-12-04 09:49:29,160] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:40:00+00:00
+[2024-12-04 09:49:29,163] {logging_mixin.py:104} INFO - [2024-12-04 09:49:29,163] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
+[2024-12-04 09:49:29,229] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 0.902 seconds
+[2024-12-04 09:49:59,655] {scheduler_job.py:182} INFO - Started process (PID=6314) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:49:59,656] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-12-04 09:49:59,657] {logging_mixin.py:104} INFO - [2024-12-04 09:49:59,657] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:50:00,099] {logging_mixin.py:104} INFO - [2024-12-04 09:50:00,099] {main.py:175} INFO - connecting to kpi_main table
+[2024-12-04 09:50:00,101] {logging_mixin.py:104} INFO - [2024-12-04 09:50:00,101] {main.py:27} INFO - Connecting to database...
+[2024-12-04 09:50:00,119] {logging_mixin.py:104} INFO - [2024-12-04 09:50:00,119] {base.py:69} INFO - Using connection to: id: kpi_table_connection. Host: 10.197.48.9, Port: 5432, Schema: rule_manager, Login: rakshit, Password: 3098333, extra: {}
+[2024-12-04 09:50:00,381] {logging_mixin.py:104} INFO - [2024-12-04 09:50:00,381] {main.py:30} INFO - Connected successfully...
+[2024-12-04 09:50:00,899] {logging_mixin.py:104} INFO - [2024-12-04 09:50:00,898] {main.py:178} INFO - connection established and data fetched successfully in 0:00:00.799196 seconds
+[2024-12-04 09:50:00,909] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['KPIs_for_Hourly', 'KPIs_for_5_Minutes']) retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:50:00,944] {logging_mixin.py:104} INFO - [2024-12-04 09:50:00,944] {dag.py:1833} INFO - Sync 2 DAGs
+[2024-12-04 09:50:00,967] {logging_mixin.py:104} INFO - [2024-12-04 09:50:00,967] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:45:00+00:00
+[2024-12-04 09:50:00,969] {logging_mixin.py:104} INFO - [2024-12-04 09:50:00,969] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
+[2024-12-04 09:50:01,033] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 1.381 seconds
+[2024-12-04 09:50:31,494] {scheduler_job.py:182} INFO - Started process (PID=6330) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:50:31,501] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-12-04 09:50:31,505] {logging_mixin.py:104} INFO - [2024-12-04 09:50:31,504] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:50:32,953] {logging_mixin.py:104} INFO - [2024-12-04 09:50:32,953] {main.py:175} INFO - connecting to kpi_main table
+[2024-12-04 09:50:32,956] {logging_mixin.py:104} INFO - [2024-12-04 09:50:32,955] {main.py:27} INFO - Connecting to database...
+[2024-12-04 09:50:33,014] {logging_mixin.py:104} INFO - [2024-12-04 09:50:33,013] {base.py:69} INFO - Using connection to: id: kpi_table_connection. Host: 10.197.48.9, Port: 5432, Schema: rule_manager, Login: rakshit, Password: 3098333, extra: {}
+[2024-12-04 09:50:33,219] {logging_mixin.py:104} INFO - [2024-12-04 09:50:33,219] {main.py:30} INFO - Connected successfully...
+[2024-12-04 09:50:33,321] {logging_mixin.py:104} INFO - [2024-12-04 09:50:33,321] {main.py:178} INFO - connection established and data fetched successfully in 0:00:00.368194 seconds
+[2024-12-04 09:50:33,358] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['KPIs_for_Hourly', 'KPIs_for_5_Minutes']) retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:50:33,451] {logging_mixin.py:104} INFO - [2024-12-04 09:50:33,450] {dag.py:1833} INFO - Sync 2 DAGs
+[2024-12-04 09:50:33,522] {logging_mixin.py:104} INFO - [2024-12-04 09:50:33,521] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:45:00+00:00
+[2024-12-04 09:50:33,530] {logging_mixin.py:104} INFO - [2024-12-04 09:50:33,529] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
+[2024-12-04 09:50:33,693] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 2.205 seconds
+[2024-12-04 09:51:04,743] {scheduler_job.py:182} INFO - Started process (PID=6346) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:51:04,755] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-12-04 09:51:04,782] {logging_mixin.py:104} INFO - [2024-12-04 09:51:04,782] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:51:09,513] {logging_mixin.py:104} INFO - [2024-12-04 09:51:09,513] {main.py:175} INFO - connecting to kpi_main table
+[2024-12-04 09:51:09,521] {logging_mixin.py:104} INFO - [2024-12-04 09:51:09,520] {main.py:27} INFO - Connecting to database...
+[2024-12-04 09:51:09,622] {logging_mixin.py:104} INFO - [2024-12-04 09:51:09,620] {base.py:69} INFO - Using connection to: id: kpi_table_connection. Host: 10.197.48.9, Port: 5432, Schema: rule_manager, Login: rakshit, Password: 3098333, extra: {}
+[2024-12-04 09:51:10,030] {logging_mixin.py:104} INFO - [2024-12-04 09:51:10,029] {main.py:30} INFO - Connected successfully...
+[2024-12-04 09:51:10,228] {logging_mixin.py:104} INFO - [2024-12-04 09:51:10,228] {main.py:178} INFO - connection established and data fetched successfully in 0:00:00.715019 seconds
+[2024-12-04 09:51:10,336] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['KPIs_for_Hourly', 'KPIs_for_5_Minutes']) retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:51:10,547] {logging_mixin.py:104} INFO - [2024-12-04 09:51:10,546] {dag.py:1833} INFO - Sync 2 DAGs
+[2024-12-04 09:51:10,689] {logging_mixin.py:104} INFO - [2024-12-04 09:51:10,688] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:45:00+00:00
+[2024-12-04 09:51:10,706] {logging_mixin.py:104} INFO - [2024-12-04 09:51:10,705] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
+[2024-12-04 09:51:11,004] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 6.287 seconds
+[2024-12-04 09:51:41,909] {scheduler_job.py:182} INFO - Started process (PID=6362) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:51:41,932] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-12-04 09:51:41,958] {logging_mixin.py:104} INFO - [2024-12-04 09:51:41,950] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:51:44,523] {logging_mixin.py:104} INFO - [2024-12-04 09:51:44,523] {main.py:175} INFO - connecting to kpi_main table
+[2024-12-04 09:51:44,529] {logging_mixin.py:104} INFO - [2024-12-04 09:51:44,528] {main.py:27} INFO - Connecting to database...
+[2024-12-04 09:51:44,671] {logging_mixin.py:104} INFO - [2024-12-04 09:51:44,667] {base.py:69} INFO - Using connection to: id: kpi_table_connection. Host: 10.197.48.9, Port: 5432, Schema: rule_manager, Login: rakshit, Password: 3098333, extra: {}
+[2024-12-04 09:51:44,971] {logging_mixin.py:104} INFO - [2024-12-04 09:51:44,971] {main.py:30} INFO - Connected successfully...
+[2024-12-04 09:51:45,266] {logging_mixin.py:104} INFO - [2024-12-04 09:51:45,265] {main.py:178} INFO - connection established and data fetched successfully in 0:00:00.742285 seconds
+[2024-12-04 09:51:45,413] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['KPIs_for_Hourly', 'KPIs_for_5_Minutes']) retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:51:45,729] {logging_mixin.py:104} INFO - [2024-12-04 09:51:45,728] {dag.py:1833} INFO - Sync 2 DAGs
+[2024-12-04 09:51:45,994] {logging_mixin.py:104} INFO - [2024-12-04 09:51:45,993] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:45:00+00:00
+[2024-12-04 09:51:46,022] {logging_mixin.py:104} INFO - [2024-12-04 09:51:46,022] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
+[2024-12-04 09:51:46,566] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 4.696 seconds
+[2024-12-04 09:52:17,627] {scheduler_job.py:182} INFO - Started process (PID=6378) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:52:17,635] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-12-04 09:52:17,637] {logging_mixin.py:104} INFO - [2024-12-04 09:52:17,637] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:52:27,717] {logging_mixin.py:104} INFO - [2024-12-04 09:52:27,716] {main.py:175} INFO - connecting to kpi_main table
+[2024-12-04 09:52:27,723] {logging_mixin.py:104} INFO - [2024-12-04 09:52:27,722] {main.py:27} INFO - Connecting to database...
+[2024-12-04 09:52:27,929] {logging_mixin.py:104} INFO - [2024-12-04 09:52:27,927] {base.py:69} INFO - Using connection to: id: kpi_table_connection. Host: 10.197.48.9, Port: 5432, Schema: rule_manager, Login: rakshit, Password: 3098333, extra: {}
+[2024-12-04 09:52:28,190] {logging_mixin.py:104} INFO - [2024-12-04 09:52:28,190] {main.py:30} INFO - Connected successfully...
+[2024-12-04 09:52:28,515] {logging_mixin.py:104} INFO - [2024-12-04 09:52:28,513] {main.py:178} INFO - connection established and data fetched successfully in 0:00:00.797130 seconds
+[2024-12-04 09:52:28,821] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['KPIs_for_Hourly', 'KPIs_for_5_Minutes']) retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:52:29,396] {logging_mixin.py:104} INFO - [2024-12-04 09:52:29,394] {dag.py:1833} INFO - Sync 2 DAGs
+[2024-12-04 09:52:29,794] {logging_mixin.py:104} INFO - [2024-12-04 09:52:29,794] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:45:00+00:00
+[2024-12-04 09:52:29,810] {logging_mixin.py:104} INFO - [2024-12-04 09:52:29,810] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
+[2024-12-04 09:52:30,814] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 13.212 seconds
+[2024-12-04 09:53:02,494] {scheduler_job.py:182} INFO - Started process (PID=6394) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:53:02,566] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-12-04 09:53:02,582] {logging_mixin.py:104} INFO - [2024-12-04 09:53:02,581] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:53:11,798] {logging_mixin.py:104} INFO - [2024-12-04 09:53:11,797] {main.py:175} INFO - connecting to kpi_main table
+[2024-12-04 09:53:11,810] {logging_mixin.py:104} INFO - [2024-12-04 09:53:11,807] {main.py:27} INFO - Connecting to database...
+[2024-12-04 09:53:12,082] {logging_mixin.py:104} INFO - [2024-12-04 09:53:12,081] {base.py:69} INFO - Using connection to: id: kpi_table_connection. Host: 10.197.48.9, Port: 5432, Schema: rule_manager, Login: rakshit, Password: 3098333, extra: {}
+[2024-12-04 09:53:12,333] {logging_mixin.py:104} INFO - [2024-12-04 09:53:12,332] {main.py:30} INFO - Connected successfully...
+[2024-12-04 09:53:12,492] {logging_mixin.py:104} INFO - [2024-12-04 09:53:12,491] {main.py:178} INFO - connection established and data fetched successfully in 0:00:00.694741 seconds
+[2024-12-04 09:53:12,672] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['KPIs_for_Hourly', 'KPIs_for_5_Minutes']) retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:53:13,123] {logging_mixin.py:104} INFO - [2024-12-04 09:53:13,121] {dag.py:1833} INFO - Sync 2 DAGs
+[2024-12-04 09:53:13,663] {logging_mixin.py:104} INFO - [2024-12-04 09:53:13,662] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:45:00+00:00
+[2024-12-04 09:53:13,725] {logging_mixin.py:104} INFO - [2024-12-04 09:53:13,725] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
+[2024-12-04 09:53:14,533] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 12.091 seconds
+[2024-12-04 09:53:45,740] {scheduler_job.py:182} INFO - Started process (PID=6410) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:53:45,745] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-12-04 09:53:45,748] {logging_mixin.py:104} INFO - [2024-12-04 09:53:45,748] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:53:46,971] {logging_mixin.py:104} INFO - [2024-12-04 09:53:46,970] {main.py:175} INFO - connecting to kpi_main table
+[2024-12-04 09:53:46,974] {logging_mixin.py:104} INFO - [2024-12-04 09:53:46,974] {main.py:27} INFO - Connecting to database...
+[2024-12-04 09:53:47,045] {logging_mixin.py:104} INFO - [2024-12-04 09:53:47,045] {base.py:69} INFO - Using connection to: id: kpi_table_connection. Host: 10.197.48.9, Port: 5432, Schema: rule_manager, Login: rakshit, Password: 3098333, extra: {}
+[2024-12-04 09:53:47,242] {logging_mixin.py:104} INFO - [2024-12-04 09:53:47,242] {main.py:30} INFO - Connected successfully...
+[2024-12-04 09:53:47,329] {logging_mixin.py:104} INFO - [2024-12-04 09:53:47,328] {main.py:178} INFO - connection established and data fetched successfully in 0:00:00.358035 seconds
+[2024-12-04 09:53:47,369] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['KPIs_for_Hourly', 'KPIs_for_5_Minutes']) retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:53:47,525] {logging_mixin.py:104} INFO - [2024-12-04 09:53:47,524] {dag.py:1833} INFO - Sync 2 DAGs
+[2024-12-04 09:53:47,639] {logging_mixin.py:104} INFO - [2024-12-04 09:53:47,638] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:45:00+00:00
+[2024-12-04 09:53:47,654] {logging_mixin.py:104} INFO - [2024-12-04 09:53:47,654] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
+[2024-12-04 09:53:47,890] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 2.159 seconds
+[2024-12-04 09:54:18,267] {scheduler_job.py:182} INFO - Started process (PID=6426) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:54:18,270] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-12-04 09:54:18,272] {logging_mixin.py:104} INFO - [2024-12-04 09:54:18,272] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:54:18,631] {logging_mixin.py:104} INFO - [2024-12-04 09:54:18,631] {main.py:175} INFO - connecting to kpi_main table
+[2024-12-04 09:54:18,632] {logging_mixin.py:104} INFO - [2024-12-04 09:54:18,632] {main.py:27} INFO - Connecting to database...
+[2024-12-04 09:54:18,648] {logging_mixin.py:104} INFO - [2024-12-04 09:54:18,648] {base.py:69} INFO - Using connection to: id: kpi_table_connection. Host: 10.197.48.9, Port: 5432, Schema: rule_manager, Login: rakshit, Password: 3098333, extra: {}
+[2024-12-04 09:54:19,108] {logging_mixin.py:104} INFO - [2024-12-04 09:54:19,108] {main.py:30} INFO - Connected successfully...
+[2024-12-04 09:54:19,494] {logging_mixin.py:104} INFO - [2024-12-04 09:54:19,494] {main.py:178} INFO - connection established and data fetched successfully in 0:00:00.863039 seconds
+[2024-12-04 09:54:19,506] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['KPIs_for_Hourly', 'KPIs_for_5_Minutes']) retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:54:19,541] {logging_mixin.py:104} INFO - [2024-12-04 09:54:19,541] {dag.py:1833} INFO - Sync 2 DAGs
+[2024-12-04 09:54:19,570] {logging_mixin.py:104} INFO - [2024-12-04 09:54:19,570] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:45:00+00:00
+[2024-12-04 09:54:19,573] {logging_mixin.py:104} INFO - [2024-12-04 09:54:19,573] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
+[2024-12-04 09:54:19,651] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 1.386 seconds
+[2024-12-04 09:54:49,879] {scheduler_job.py:182} INFO - Started process (PID=6442) to work on /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:54:49,881] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/Kpi_dags/main.py for tasks to queue
+[2024-12-04 09:54:49,882] {logging_mixin.py:104} INFO - [2024-12-04 09:54:49,882] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:54:50,309] {logging_mixin.py:104} INFO - [2024-12-04 09:54:50,309] {main.py:175} INFO - connecting to kpi_main table
+[2024-12-04 09:54:50,310] {logging_mixin.py:104} INFO - [2024-12-04 09:54:50,310] {main.py:27} INFO - Connecting to database...
+[2024-12-04 09:54:50,330] {logging_mixin.py:104} INFO - [2024-12-04 09:54:50,330] {base.py:69} INFO - Using connection to: id: kpi_table_connection. Host: 10.197.48.9, Port: 5432, Schema: rule_manager, Login: rakshit, Password: 3098333, extra: {}
+[2024-12-04 09:54:51,118] {logging_mixin.py:104} INFO - [2024-12-04 09:54:51,118] {main.py:30} INFO - Connected successfully...
+[2024-12-04 09:54:51,741] {logging_mixin.py:104} INFO - [2024-12-04 09:54:51,741] {main.py:178} INFO - connection established and data fetched successfully in 0:00:01.431376 seconds
+[2024-12-04 09:54:51,756] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['KPIs_for_Hourly', 'KPIs_for_5_Minutes']) retrieved from /opt/airflow/dags/Kpi_dags/main.py
+[2024-12-04 09:54:51,798] {logging_mixin.py:104} INFO - [2024-12-04 09:54:51,798] {dag.py:1833} INFO - Sync 2 DAGs
+[2024-12-04 09:54:51,824] {logging_mixin.py:104} INFO - [2024-12-04 09:54:51,824] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_5_Minutes to 2024-12-04T09:45:00+00:00
+[2024-12-04 09:54:51,826] {logging_mixin.py:104} INFO - [2024-12-04 09:54:51,826] {dag.py:2306} INFO - Setting next_dagrun for KPIs_for_Hourly to 2024-12-04T09:00:00+00:00
+[2024-12-04 09:54:51,879] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/Kpi_dags/main.py took 2.002 seconds
